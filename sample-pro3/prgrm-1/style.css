@@ -1,14 +1,26 @@
-.col-1-wrapper{
-    height: 60%;
-    width: 40%;
+.column {
+  float: left;
+  width: 33.33%;
 }
-.row-1-wrapper{
-    background-color:darkcyan;
-    height:80%;
-    width: 50%;
-    
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-.row-2-wrapper{
-    height: 40%;
-    width: 30%;
+.column {
+  float: left;
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+.column {
+    width: 100%;
+  }
 }
